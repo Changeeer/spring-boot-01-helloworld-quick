@@ -6,34 +6,46 @@ import java.util.List;
 
 @Data
 public class EolinkUser {
+
     /**
-     * 用户id
+     * id
+     * @eo.remark
      */
     private Integer id;
+
     /**
-     * 名字
-     * @eo.required
+     * name
+     * @eo.remark
      */
     private String name;
+
     /**
-     * 手机
-     * @eo.required
+     * mobile
+     * @eo.remark
      */
     private String mobile;
+
     /**
-     * 年龄
+     * age
+     * @eo.remark
      */
     private Integer age;
+
     /**
-     * 性别
+     * sex
+     * @eo.remark
      */
     private Integer sex;
+
     /**
-     * 朋友
+     * friends
+     * @eo.remark
      */
     private List<EolinkUser> friends;
+
     /**
-     * @eo.hidden
+     * status
+     * @eo.remark
      */
     private Integer status;
 }

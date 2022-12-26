@@ -1,13 +1,18 @@
 package com.mytest.springboot.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserDto {
     /**
      * 用户名
@@ -22,7 +27,8 @@ public class UserDto {
     /**
      * 朋友
      */
-    private List<? extends UserDto> friends;
+    private List<UserDto> friends;
+//    private List<? extends UserDto> friends;
     /**
      * 昵称
      */
@@ -39,100 +45,10 @@ public class UserDto {
 //    private Class<? extends Exception> e;
 
     /**
-     * 状态
-     * @eo.hidden
+     * 父类
      */
-    private int status;
+    private UserDto father;
 
-    /**
-     * 地址1
-     * @eo.required
-     */
-    private String addr;
-    /**
-     * 地址2
-     * @eo.required
-     */
-    private String addr2;
+    private List<Address> addressList;
 
-    public UserDto() {
-    }
-
-    public UserDto(String userName, Integer ages, List<String> nickNames) {
-        this.userName = userName;
-        this.ages = ages;
-        this.nickNames = nickNames;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public Integer getAges() {
-        return ages;
-    }
-
-    public void setAges(Integer ages) {
-        this.ages = ages;
-    }
-
-    public List<? extends UserDto> getFriends() {
-        return friends;
-    }
-
-    public void setFriends(List<? extends UserDto> friends) {
-        this.friends = friends;
-    }
-
-    public List<String> getNickNames() {
-        return nickNames;
-    }
-
-    public void setNickNames(List<String> nickNames) {
-        this.nickNames = nickNames;
-    }
-
-    public String[] getMobile() {
-        return mobile;
-    }
-
-    public void setMobile(String[] mobile) {
-        this.mobile = mobile;
-    }
-
-    public Map<String, UserDto> getMaps() {
-        return maps;
-    }
-
-    public void setMaps(Map<String, UserDto> maps) {
-        this.maps = maps;
-    }
-
-    public int getStatus() {
-        return status;
-    }
-
-    public void setStatus(int status) {
-        this.status = status;
-    }
-
-    public String getAddr() {
-        return addr;
-    }
-
-    public void setAddr(String addr) {
-        this.addr = addr;
-    }
-
-    public String getAddr2() {
-        return addr2;
-    }
-
-    public void setAddr2(String addr2) {
-        this.addr2 = addr2;
-    }
 }

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.annotations.ApiIgnore;
 
 /**
- * @eo.groupName Swagger2分组
+ * @eo.group-name Swagger2分组
  */
 @Api(basePath = "/swagger2")
 @RestController

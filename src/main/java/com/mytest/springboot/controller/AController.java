@@ -1,19 +1,12 @@
 package com.mytest.springboot.controller;
 
-import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
-import com.mytest.springboot.dto.Department;
-import com.mytest.springboot.dto.SupermanDto;
 import com.mytest.springboot.dto.UserDto;
-import com.sun.org.apache.xpath.internal.objects.XString;
-import com.sun.org.apache.xpath.internal.objects.XStringForChars;
-import com.szbank.dto.Carda;
 import org.springframework.web.bind.annotation.*;
 
 
 /**
- * @eo.path /plugin
- * @eo.groupName 12-22测试
+ * @eo.path /plugin @eo.groupName 12-22测试
  */
 @RestController
 @RequestMapping("/plugin")

@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 
 /**
- * @eo.groupName 1-10-test
+ * @eo.group-name 1-10-test
  * @eo.path /{"test"}
  */
 @RestController
@@ -55,8 +55,7 @@ public class HelloController {
 
 	@GetMapping({"default/getUser/{id}"})
 	public ResponseParams<UserDto> testPath(@PathVariable("id") Integer id, String name) {
-		UserDto userDto = new UserDto(name,18,new ArrayList<String>());
-		return new ResponseParams<>(userDto);
+		return new ResponseParams<>(null);
 	}
 
 	@GetMapping({"default/get/{id}"})

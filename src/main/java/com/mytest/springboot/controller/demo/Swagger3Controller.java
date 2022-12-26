@@ -19,7 +19,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
 /**
- * @eo.groupName Swagger3分组
+ * @eo.group-name Swagger3分组
  */
 @Path("/swagger3")
 @RestController

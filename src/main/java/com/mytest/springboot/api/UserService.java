@@ -1,5 +1,6 @@
 package com.mytest.springboot.api;
 
+import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.SupermanDto;
 import com.mytest.springboot.dto.UserDto;
 
@@ -17,4 +18,6 @@ public interface UserService {
     List<UserDto> getAllUsers();
 
     Map<String, UserDto> getUserIdMaps(List<Integer> ids);
+
+    NormalVO getNormal(NormalVO normalVO);
 }

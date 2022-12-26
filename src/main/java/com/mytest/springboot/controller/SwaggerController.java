@@ -1,6 +1,7 @@
 package com.mytest.springboot.controller;
 
 import com.mytest.springboot.dto.swagger.*;
+import io.swagger.annotations.Api;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;

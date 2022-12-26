@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.ws.rs.PUT;
 
 /**
- * @eo.groupName Chaos分组
+ * @eo.group-name Chaos分组
  * @eo.path /chaos
  */
 @RestController

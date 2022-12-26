@@ -1,23 +1,53 @@
 package com.mytest.springboot.common;
 
-public class ResponseParams<T> {
+import com.mytest.springboot.dto.UserDto;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ResponseParams<T> implements Serializable {
+
+    private static final long serialVersionUID=1L;
     /**
      * 状态码
+     *
      * @eo.required
      */
     private String code;
     /**
      * 返回信息
+     *
      * @eo.required
      */
     private String msg;
+
+    /**
+     * 属性
+     */
+    private List<Property> baseProperties = Collections.emptyList();
     /**
      * 返回对象
      */
     private T data;
 
-    public ResponseParams() {
-    }
+    /**
+     * 数组
+     */
+    private Set set;
+
+    /**
+     * 图关系
+     */
+    private Map map;
 
     public ResponseParams(String code, String msg) {
         this.code = code;
@@ -30,28 +60,20 @@ public class ResponseParams<T> {
         this.msg = "success";
     }
 
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getMsg() {
-        return msg;
-    }
-
-    public void setMsg(String msg) {
-        this.msg = msg;
-    }
-
-    public T getData() {
-        return this.data;
-    }
-
-    public void setData(T data) {
-        this.data = data;
+    @Data
+    public static class Property {
+        /**
+         * 类型
+         */
+        private Integer type;
+        /**
+         * 变量名
+         */
+        private String key;
+        /**
+         * 变量值
+         */
+        private String value;
     }
 }
 

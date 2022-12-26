@@ -12,9 +12,8 @@ import javax.ws.rs.PUT;
 
 /**
  * @eo.api-type http
- * @eo.groupName Eolink分组
- * @eo.path /eolink
- * @eo.test
+ * @eo.group-name Eolink分组
+ * @eo.path /eolink @eo.test
  */
 @RestController
 @RequestMapping("/eolink")

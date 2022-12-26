@@ -2,17 +2,18 @@ package com.mytest.springboot.controller;
 
 import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.common.ResponseParams;
+import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.SupermanDto;
+import com.mytest.springboot.dto.UserDto;
 import com.szbank.dto.Carda;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
-
 /**
  * @eo.api-type http
- * @eo.groupName 0520-http
+ * @eo.group-name 默认分组
  * @eo.path /single4
  */
 
@@ -20,11 +21,10 @@ import java.util.List;
 @RequestMapping("/single4")
 public class SingleController {
 
-
     /**
      * @eo.name getCarda
      * @eo.url /carda
-     * @eo.method get
+     * @eo.method post
      * @eo.request-type json
      * @param supermanDto
      * @return Carda
@@ -33,7 +33,6 @@ public class SingleController {
     public Carda getCarda(@RequestBody List<SupermanDto> supermanDto) {
         return null;
     }
-
 
     /**
      * @eo.name helloWorld
@@ -44,10 +43,9 @@ public class SingleController {
      * @return ResponseParams
      */
     @GetMapping("/hello")
-    public ResponseParams<String> helloWorld(String name){
+    public ResponseParams<Integer> helloWorld(String name){
         return null;
     }
-
 
     /**
      * @eo.name deleteUser
@@ -60,6 +58,21 @@ public class SingleController {
      */
     @DeleteMapping("/delete")
     public PlainResult<Long> deleteUser(Integer userId, HttpServletRequest request){
+        return null;
+    }
+
+    /**
+     * @eo.name helloWorld
+     * @eo.url /normal
+     * @eo.method get
+     * @eo.request-type formdata
+     * @param result
+     * @param name
+     * @param userDto
+     * @return PlainResult
+     */
+    @GetMapping("/normal")
+    public PlainResult<NormalVO> helloWorld(ResponseParams result, String name, UserDto userDto){
         return null;
     }
 

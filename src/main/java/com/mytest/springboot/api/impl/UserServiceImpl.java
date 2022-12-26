@@ -1,8 +1,11 @@
 package com.mytest.springboot.api.impl;
 
 import com.mytest.springboot.api.UserService;
+import com.mytest.springboot.dto.Address;
+import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.SupermanDto;
 import com.mytest.springboot.dto.UserDto;
+import com.mytest.springboot.dto.base.SpecialResult;
 import org.apache.dubbo.config.annotation.DubboService;
 
 import java.util.List;
@@ -10,11 +13,6 @@ import java.util.Map;
 
 
 /**
- * @eo.api-type dubbo
- * @eo.groupName 0518-rpc
- * @eo.path
- * @eo.rpc-version v0.0.1
- * @eo.rpc-group com.mytest.springboot.api
  */
 
 @DubboService(version = "v0.0.1")
@@ -22,8 +20,7 @@ public class UserServiceImpl implements UserService {
 
 
     /**
-     * @eo.name 通过id获取用户
-     * @param id id
+     * @param id
      * @return UserDto
      */
     @Override
@@ -31,9 +28,9 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+
     /**
-     * @eo.name getSupermanByUser
-     * @param user 用户
+     * @param user
      * @return SupermanDto
      */
     @Override
@@ -43,7 +40,6 @@ public class UserServiceImpl implements UserService {
 
 
     /**
-     * @eo.name getSuperSkill
      * @param username
      * @return String
      */
@@ -52,8 +48,8 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+
     /**
-     * @eo.name getAllUsers
      * @return List
      */
     @Override
@@ -61,13 +57,30 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+
     /**
-     * @eo.name getUserIdMaps
      * @param ids
      * @return Map
      */
     @Override
     public Map<String, UserDto> getUserIdMaps(List<Integer> ids) {
+        return null;
+    }
+
+    /**
+     * @param normalVO
+     * @return NormalVO
+     */
+    @Override
+    public NormalVO getNormal(NormalVO normalVO) {
+        return null;
+    }
+
+    /**
+     * @param add
+     * @return SpecialResult
+     */
+    public SpecialResult<Long, Address> getAddress(Address add) {
         return null;
     }
 }

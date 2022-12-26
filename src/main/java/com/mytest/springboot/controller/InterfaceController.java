@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @eo.groupName y
+ * @eo.group-name y
  * @eo.path
  */
 public interface InterfaceController {
