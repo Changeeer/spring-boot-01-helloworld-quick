@@ -8,7 +8,7 @@ public class SupermanDto extends UserDto{
 
     /**
      * 技能 12:00-13:00
-     * @eo.required
+     * @required
      */
     private String superSkill;
 

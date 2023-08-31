@@ -13,18 +13,19 @@ import java.util.Map;
 
 
 /**
- * @eo.api-type dubbo
+ * @eo.api-type http
  * @eo.group-name 默认分组
  * @eo.path
- * @eo.rpc-version v0.0.1
- * @eo.rpc-group com.mytest.springboot.api
  */
 
-@DubboService(version = "v0.0.1")
-public class UserServiceImpl implements UserService {
+public class UserServiceApiImpl implements UserService {
+
 
     /**
      * @eo.name getUserById
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @param id
      * @return UserDto
      */
@@ -33,8 +34,12 @@ public class UserServiceImpl implements UserService {
         return null;
     }
 
+
     /**
      * @eo.name getSupermanByUser
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @param user
      * @return SupermanDto
      */
@@ -45,6 +50,9 @@ public class UserServiceImpl implements UserService {
 
     /**
      * @eo.name getSuperSkill
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @param username
      * @return String
      */
@@ -55,6 +63,9 @@ public class UserServiceImpl implements UserService {
 
     /**
      * @eo.name getAllUsers
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @return List
      */
     @Override
@@ -64,6 +75,9 @@ public class UserServiceImpl implements UserService {
 
     /**
      * @eo.name getUserIdMaps
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @param ids
      * @return Map
      */
@@ -74,6 +88,9 @@ public class UserServiceImpl implements UserService {
 
     /**
      * @eo.name getNormal
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @param normalVO
      * @return NormalVO
      */
@@ -84,6 +101,9 @@ public class UserServiceImpl implements UserService {
 
     /**
      * @eo.name getAddress
+     * @eo.url
+     * @eo.method get
+     * @eo.request-type formdata
      * @param add
      * @return SpecialResult
      */

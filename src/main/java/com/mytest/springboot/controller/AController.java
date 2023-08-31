@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 
 /**
- * @eo.path /plugin @eo.groupName 12-22测试
+ * @eo.path /plugin
+ * @eo.group-name 12-22测试
  */
 @RestController
 @RequestMapping("/plugin")
@@ -15,9 +16,9 @@ public class AController {
 
     /**
      * hello for test
-     * @eo.url /hello
+     * @url /hello
      * @eo.method post
-     * @param name 名字 {@eo.required}
+     * @param name 名字 {@required}
      * @return 招呼语
      */
     @RequestMapping("/hello")
@@ -27,7 +28,7 @@ public class AController {
 
     /**
      * 通过id获取用户
-     * @eo.url /user
+     * @url /user
      * @eo.method post
      * @param id
      */
@@ -48,7 +49,7 @@ public class AController {
 
     /**
      * 保存用户
-     * @eo.url /user
+     * @url /user
      * @param user 用户数据
      * @param id 用户id
      * @return 用户id

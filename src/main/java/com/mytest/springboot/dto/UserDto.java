@@ -35,7 +35,7 @@ public class UserDto {
     private List<String> nickNames;
     /**
      * 电话
-     * @eo.required
+     * @required
      */
     private String[] mobile;
     /**
@@ -51,4 +51,68 @@ public class UserDto {
 
     private List<Address> addressList;
 
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public Integer getAges() {
+        return ages;
+    }
+
+    public void setAges(Integer ages) {
+        this.ages = ages;
+    }
+
+    public List<UserDto> getFriends() {
+        return friends;
+    }
+
+    public void setFriends(List<UserDto> friends) {
+        this.friends = friends;
+    }
+
+    public List<String> getNickNames() {
+        return nickNames;
+    }
+
+    public void setNickNames(List<String> nickNames) {
+        this.nickNames = nickNames;
+    }
+
+    public String[] getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String[] mobile) {
+        this.mobile = mobile;
+    }
+
+    public Map<String, UserDto> getMaps() {
+        return maps;
+    }
+
+    public void setMaps(Map<String, UserDto> maps) {
+        this.maps = maps;
+    }
+
+    public UserDto getFather() {
+        return father;
+    }
+
+    public void setFather(UserDto father) {
+        this.father = father;
+    }
+
+    public List<Address> getAddressList() {
+        return addressList;
+    }
+
+    public void setAddressList(List<Address> addressList) {
+        this.addressList = addressList;
+    }
 }

@@ -10,27 +10,27 @@ public class Address {
 
     /**
      * roomCode
-     * @eo.required
-     * @eo.remark 123123123123
+     * @required
+     * @remark 123123123123
      */
     @NotNull
     private String roomCode;
 
     /**
      * city
-     * @eo.remark
+     * @remark
      */
     private String city;
 
     /**
      * street
-     * @eo.remark
+     * @remark
      */
     private String street;
 
     /**
      * streetCode
-     * @eo.remark
+     * @remark
      */
     private Integer streetCode;
 }

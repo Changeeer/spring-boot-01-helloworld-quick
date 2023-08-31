@@ -1,0 +1,5 @@
+# curl -X GET 'http://127.0.0.1:9001/api/?userName=userName_test&ages=614028&friends=&nickNames=&mobile=mobile_test&maps=&father=&addressList=&addressList.roomCode=roomCode_test&addressList.city=city_test&addressList.street=street_test&addressList.streetCode=519548'
+GET http://127.0.0.1:9001/api/?userName=userName_test&ages=614028&friends=&nickNames=&mobile=mobile_test&maps=&father=&addressList=&addressList.roomCode=roomCode_test&addressList.city=city_test&addressList.street=street_test&addressList.streetCode=519548
+
+###
+

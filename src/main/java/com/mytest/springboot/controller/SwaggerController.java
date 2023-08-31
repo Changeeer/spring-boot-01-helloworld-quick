@@ -21,7 +21,7 @@ public class SwaggerController {
 
 
     /** 555
-     * @eo.url /user
+     * @url /user
      * @param user 1
      * @param name 2
      * @param code 3

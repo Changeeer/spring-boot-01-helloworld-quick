@@ -15,20 +15,20 @@ public class DWRequest {
 
     /**
      * 用户信息
-     * @eo.required
+     * @required
      */
     private UserDto user;
 
 
     /**
      * 默认A类卡
-     * @eo.required
+     * @required
      */
     private Carda carda;
 
     /**
      * u1
-     * @eo.required
+     * @required
      */
     private List<UserDto> normalVOList;
 

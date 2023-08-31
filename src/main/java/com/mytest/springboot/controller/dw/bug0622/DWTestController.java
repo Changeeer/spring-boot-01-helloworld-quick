@@ -25,7 +25,7 @@ public class DWTestController {
 
     /**
      * @eo.name testSameTypeParams
-     * @eo.url /same-type-params
+     * @url /same-type-params
      * @eo.method post
      * @eo.request-type json
      * @param request
@@ -53,7 +53,7 @@ public class DWTestController {
 
     /**
      * @eo.name delete
-     * @eo.url /item/delete
+     * @url /item/delete
      * @eo.method post
      * @eo.request-type json
      * @param itemRequst
@@ -68,7 +68,7 @@ public class DWTestController {
     /**
      * @eo.name delete2
      * @eo.group-name 0525-2.test
-     * @eo.url /item/delete2
+     * @url /item/delete2
      * @eo.method post
      * @eo.request-type json
      * @param normal

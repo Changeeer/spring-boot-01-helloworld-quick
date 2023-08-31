@@ -1,6 +1,7 @@
 package com.mytest.springboot.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.Department;
@@ -20,10 +21,10 @@ import java.util.ArrayList;
 public class HelloController {
 
 	/**
-	 * 测试=接口
-	 * @eo.url /hello
-	 * @return hello world
-	 */
+     * 测试=接口
+     * @url /hello
+     * @return hello world
+     */
 	@RequestMapping("/hello")
 	public String helloWorld(){
 		return "hello world quick";
@@ -41,11 +42,11 @@ public class HelloController {
 	}
 
 	@RequestMapping(value = {"post/addUser"},headers= {"test_header=abc"})
-	public Integer testData(@RequestBody RequestParams<UserDto> params) {
+	public PlainResult<String> testData(@RequestBody RequestParams<UserDto> params) {
 //		UserDto userDto = params.getData();
 //		return userDto.getAges();
 		System.out.println(JSON.toJSONString(params));
-		return 0;
+		return null;
 	}
 
 	@GetMapping({"default/getUser"})

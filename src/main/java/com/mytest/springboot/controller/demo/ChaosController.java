@@ -17,8 +17,8 @@ import javax.ws.rs.PUT;
 public class ChaosController {
 
     /**
-     * @eo.url /saveUser
-     * @param user 用户 {@eo.required}
+     * @url /saveUser
+     * @param user 用户 {@required}
      * @return
      */
     @ApiOperation("保存用户2")  // swagger2

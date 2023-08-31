@@ -20,9 +20,9 @@ import javax.ws.rs.PUT;
 public class EolinkController {
 
     /**
-     * @eo.url /saveUser
+     * @url /saveUser
      * @eo.method
-     * @param user 用户 {@eo.required}
+     * @param user 用户 {@required}
      * @return
      */
     @ApiOperation("保存用户2")  // swagger2

@@ -20,13 +20,13 @@ public class ResponseParams<T> implements Serializable {
     /**
      * 状态码
      *
-     * @eo.required
+     * @required
      */
     private String code;
     /**
      * 返回信息
      *
-     * @eo.required
+     * @required
      */
     private String msg;
 

@@ -15,6 +15,7 @@ import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.UserDto;
 import com.szbank.dto.Carda;
+import kotlin.jvm.internal.Ref;
 import lombok.Data;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,12 +26,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.*;
+import java.util.concurrent.LinkedBlockingDeque;
 
 
 /**
  * @eo.api-type http
- * @eo.group-name 默认分组
+ * @eo.group-name system
  * @eo.path /system
  */
 @RestController
@@ -40,22 +43,21 @@ public class TestSystemController {
 
     /**
      * 123
-     * @param tagId {@eo.hidden}
-     * @param car {@eo.required}
+     * @param tagId
      * @eo.name 123
-     * @eo.url /default/getUser/{tagId}
+     * @url /default/getUser/{tagId}
      * @eo.method post
      * @eo.request-type json
      */
     @PostMapping({"default/getUser/{tagId}"})
-    public PaginatorResult<Page<Car>> testPath(@PathVariable("tagId") long tagId, @RequestBody PlainResult<List<UserDto>> car) {
+    public PlainResult<Car> testPath(@PathVariable("tagId") long tagId) {
         return null;
     }
 
     /**
      * @return Car
      * @eo.name testPath
-     * @eo.url /mono
+     * @url /mono
      * @eo.method post
      * @eo.request-type formdata
      */
@@ -74,8 +76,21 @@ public class TestSystemController {
         /**
          * 车牌`~!@#$%^&*()_+{}|:"<>?</>[]\;',./
          */
-        @JsonIgnore
         private Long id;
+
+        private int intId;
+
+        private boolean flag;
+
+        private double d;
+
+        private BigDecimal bigDecimal;
+
+        private byte aByte;
+
+        private Date date;
+
+        private Collection<UserDto> lists;
 
 //        /**
 //         * a*b*c* * 1

@@ -14,12 +14,12 @@ public class Pet {
     private long id;
     /**
      * 类型
-     * @eo.required
+     * @required
      */
     private Category category;
     private String name;
     /**
-     * @eo.hidden
+     * @hidden
      */
     private List<String> photoUrls = new ArrayList<String>();
     @ApiModelProperty(hidden = true)

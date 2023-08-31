@@ -29,7 +29,7 @@ public class Swagger3Controller {
 
     /**
      * @eo.name 保存用户
-     * @eo.url /saveUser
+     * @url /saveUser
      * @eo.method get
      * @eo.request-type formdata
      * @param user
@@ -49,10 +49,10 @@ public class Swagger3Controller {
 
     /**
      * @eo.name 其他用例
-     * @eo.url /other
+     * @url /other
      * @eo.method get
      * @eo.request-type formdata
-     * @param username
+     * @param usereo.name
      * @param password
      * @return String
      */

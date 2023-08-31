@@ -1,51 +1,48 @@
 package com.mytest.springboot.dto.demo;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Data
-public class EolinkUser {
+public class PostcatUser {
 
     /**
      * id
-     * @remark
+     * @required
      */
+    @NotNull
     private Integer id;
-
     /**
      * name
-     * @remark
+     * @required
      */
+    @NotNull
     private String name;
-
     /**
      * mobile
-     * @remark
+     * @required
      */
+    @NotNull
     private String mobile;
-
     /**
      * age
-     * @remark
      */
     private Integer age;
-
     /**
      * sex
-     * @remark
      */
     private Integer sex;
-
     /**
      * friends
-     * @remark
      */
-    private List<EolinkUser> friends;
-
+    private List<PostcatUser> friends;
     /**
      * status
-     * @remark
+     * @hidden
      */
+    @JsonIgnore
     private Integer status;
 }

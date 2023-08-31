@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  * @eo.api-type http
- * @eo.group-name 默认分组
+ * @eo.group-name dw-test
  * @eo.path
  */
 
@@ -17,7 +17,7 @@ public class DWTestController {
 
     /**
      * @eo.name list
-     * @eo.url /list
+     * @url /list
      * @eo.method post
      * @eo.request-type formdata
      * @param normalVO

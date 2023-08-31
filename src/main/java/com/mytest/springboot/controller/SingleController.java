@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+
 /**
  * @eo.api-type http
  * @eo.group-name 默认分组
@@ -33,6 +34,7 @@ public class SingleController {
     public Carda getCarda(@RequestBody List<SupermanDto> supermanDto) {
         return null;
     }
+
 
     /**
      * @eo.name helloWorld

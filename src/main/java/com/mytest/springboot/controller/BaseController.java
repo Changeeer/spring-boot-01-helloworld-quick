@@ -22,6 +22,14 @@ public class BaseController<T,PK> {
 //        return null;
 //    }
 
+    /**
+     * @eo.name 基础接口
+     * @url /base
+     * @eo.method get
+     * @eo.request-type formdata
+     * @return SpecialResult
+     * @eo.group-name base.web
+     */
     @GetMapping("/base")
     protected SpecialResult<T, PK> base() {
         return null;

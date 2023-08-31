@@ -29,7 +29,7 @@ public class ChaosUser {
      */
     private List<ChaosUser> friends;
     /**
-     * @eo.hidden
+     * @hidden
      */
     private Integer status;
 }
