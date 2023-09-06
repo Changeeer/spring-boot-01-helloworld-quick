@@ -66,7 +66,7 @@ public class NormalVO {
      * 库存量类型：ON_HAND_QTY-现存量；AVAIL_QTY-可用量；
      * @remark
      */
-    private String testStr;
+    private Map<String, Map<String, List<String>>> testStr;
 
     /**
      * 邮箱，账号，手机，或者任，意帐号，密码，都可，以登，陆只，要你，喜欢，就好了知道吗
@@ -74,5 +74,5 @@ public class NormalVO {
      * @required
      */
     @NotNull
-    private String loginName;
+    private List<List<String>> loginName;
 }
