@@ -23,14 +23,7 @@ import java.util.Map;
 @RequestMapping(value = "/eolink")
 public class TestController {
 
-	/**
-     * @eo.name testUserDto
-     * @url /map/userDto
-     * @eo.method get
-     * @eo.request-type formdata
-     * @param userDto
-     * @return ResponseParams
-     */
+	// 测试单行注释
 	@RequestMapping({"map/userDto"})
 	public ResponseParams<Map<String,UserDto>> testUserDto(UserDto userDto) {
 		return null;
