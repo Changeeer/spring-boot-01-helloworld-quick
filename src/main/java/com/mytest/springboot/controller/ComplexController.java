@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @eo.api-type http
@@ -17,7 +18,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = "/complex")
-public class ComplexController extends BaseController<String,String>{
+public class ComplexController extends BaseController<String, List<Map<String, UserDto>>>{
 
     @PostMapping("/carda")
     public Carda testDependent(@RequestBody RequestParams<Carda> data) {
