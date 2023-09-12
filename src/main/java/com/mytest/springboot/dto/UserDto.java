@@ -27,8 +27,8 @@ public class UserDto {
     /**
      * 朋友
      */
-    private List<UserDto> friends;
-//    private List<? extends UserDto> friends;
+//    private List<UserDto> friends;
+    private List<? extends UserDto> friends;
     /**
      * 昵称
      */
@@ -68,7 +68,7 @@ public class UserDto {
         this.ages = ages;
     }
 
-    public List<UserDto> getFriends() {
+    public List<? extends UserDto> getFriends() {
         return friends;
     }
 

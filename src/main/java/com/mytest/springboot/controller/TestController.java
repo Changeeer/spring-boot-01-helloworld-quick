@@ -29,7 +29,8 @@ public class TestController {
 	 * @eo.method get
 	 * @eo.request-type formdata
 	 * @param userDto 用户信息
-	 * @param aaa aaa
+	 * @eo.param UserDto aaa
+	 * @param name
 	 * {@eo.hidden}
 	 * @return ResponseParams
 	 */
