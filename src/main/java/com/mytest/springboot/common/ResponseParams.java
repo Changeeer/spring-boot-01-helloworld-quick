@@ -74,6 +74,18 @@ public class ResponseParams<T> implements Serializable {
          * 变量值
          */
         private String value;
+
+        /**
+         * 环境
+         */
+        private Env env;
+
+        @Data
+        public static class Env{
+
+            private Integer type;
+        }
+
     }
 }
 

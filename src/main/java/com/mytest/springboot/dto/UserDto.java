@@ -39,9 +39,9 @@ public class UserDto {
      */
     private String[] mobile;
     /**
-     * 关系图
+     * 这是一个map
      */
-    private Map<String, UserDto> maps;
+    private Map maps;
 //    private Class<? extends Exception> e;
 
     /**

@@ -1,0 +1,5 @@
+# curl -X GET 'http://127.0.0.1:9001/eolink/delay?min=66178'
+GET http://127.0.0.1:9001/eolink/delay?min=66178
+
+###
+
