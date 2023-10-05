@@ -15,6 +15,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 测试类 -
+ * 换行测试类
  * @eo.api-type http
  * @eo.group-name 默认
  * @eo.path /eolink
@@ -24,17 +26,16 @@ import java.util.Map;
 public class TestController {
 
 	/**
+	 * 测试方法名称
+	 * 再换行试试会怎样
 	 * @eo.name testUserDto
 	 * @eo.url /map/userDto
 	 * @eo.method get
 	 * @eo.request-type formdata
-	 * @param userDto 用户信息
-	 * @eo.param UserDto aaa
-	 * @param name
-	 * {@eo.hidden}
+	 * @param userDto
 	 * @return ResponseParams
 	 */
-	@RequestMapping({"map/userDto"})
+	@RequestMapping({"map/userDto","/abc"})
 	public ResponseParams<Map<String,UserDto>> testUserDto(UserDto userDto) {
 		return null;
 	}
@@ -66,13 +67,13 @@ public class TestController {
 //     * @return List
 //	 * @eo.url /list/object
 //     */
-//	@RequestMapping(value = {"list/object"},headers= {"test_header=abc"})
-//	public List<UserDto> testListObject(@RequestBody RequestParams<List<UserDto>> params) {
-////		UserDto userDto = params.getData();
-////		return userDto.getAges();
-//		System.out.println(JSON.toJSONString(params));
-//		return new ArrayList<>();
-//	}
+	@RequestMapping(value = {"list/object", "/abc"},headers= {"test_header=abc"})
+	public List<UserDto> testListObject(@RequestBody RequestParams<List<UserDto>> params) {
+//		UserDto userDto = params.getData();
+//		return userDto.getAges();
+		System.out.println(JSON.toJSONString(params));
+		return new ArrayList<>();
+	}
 //
 //	/**
 //     * @eo.name 请求无返回
