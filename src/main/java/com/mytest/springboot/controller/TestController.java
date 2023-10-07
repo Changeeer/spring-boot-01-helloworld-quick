@@ -28,14 +28,8 @@ public class TestController {
 	/**
 	 * 测试方法名称
 	 * 再换行试试会怎样
-	 * @eo.name testUserDto
-	 * @eo.url /map/userDto
-	 * @eo.method get
-	 * @eo.request-type formdata
-	 * @param userDto
-	 * @return ResponseParams
 	 */
-	@RequestMapping({"map/userDto","/abc"})
+	@PostMapping({"map/userDto"})
 	public ResponseParams<Map<String,UserDto>> testUserDto(UserDto userDto) {
 		return null;
 	}
@@ -67,7 +61,13 @@ public class TestController {
 //     * @return List
 //	 * @eo.url /list/object
 //     */
-	@RequestMapping(value = {"list/object", "/abc"},headers= {"test_header=abc"})
+
+	/**
+	 * 获取列表
+	 * @param params
+	 * @return
+	 */
+	@GetMapping(value = "list/object")
 	public List<UserDto> testListObject(@RequestBody RequestParams<List<UserDto>> params) {
 //		UserDto userDto = params.getData();
 //		return userDto.getAges();
