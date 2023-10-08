@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
  * @eo.group-name 0625-1-1-1
  * @eo.path /dewu
  */
-
 @Slf4j
 @RestController
 @RequestMapping("dewu")
@@ -33,6 +32,7 @@ public class DWTestController {
      */
     @PostMapping("same-type-params")
     public PlainResult<DWRequest> testSameTypeParams(@RequestBody DWRequest request) {
+
         return null;
     }
 

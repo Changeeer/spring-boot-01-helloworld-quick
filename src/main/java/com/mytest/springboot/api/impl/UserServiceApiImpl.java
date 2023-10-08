@@ -12,11 +12,6 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * @eo.api-type http
- * @eo.group-name 默认分组
- * @eo.path
- */
 
 public class UserServiceApiImpl implements UserService {
 

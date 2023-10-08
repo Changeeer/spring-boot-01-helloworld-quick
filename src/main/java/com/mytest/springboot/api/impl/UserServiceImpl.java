@@ -12,15 +12,15 @@ import java.util.List;
 import java.util.Map;
 
 
-/**
- * @eo.api-type dubbo
- * @eo.group-name 默认分组
- * @eo.path
- * @eo.rpc-version v0.0.1
- * @eo.rpc-group com.mytest.springboot.api
- */
+///**
+// * @eo.api-type dubbo
+// * @eo.group-name 默认分组
+// * @eo.path
+// * @eo.rpc-version v0.0.1
+// * @eo.rpc-group com.mytest.springboot.api
+// */
 
-@DubboService(version = "v0.0.1")
+//@DubboService(version = "v0.0.1")
 public class UserServiceImpl implements UserService {
 
     /**
