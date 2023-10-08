@@ -13,6 +13,8 @@ import springfox.documentation.annotations.ApiIgnore;
 
 /**
  * @eo.group-name Swagger2分组
+ * @eo.api-type http
+ * @eo.path /swagger2
  */
 @Api(basePath = "/swagger2")
 @RestController
@@ -20,6 +22,14 @@ import springfox.documentation.annotations.ApiIgnore;
 public class Swagger2Controller {
 
 
+    /**
+     * @eo.name 保存用户
+     * @eo.url /saveUser
+     * @eo.method get
+     * @eo.request-type formdata
+     * @param user
+     * @return ResponseParams
+     */
     @ApiOperation("保存用户")
     // 暂无请求方法分析
     // 暂无url分析
