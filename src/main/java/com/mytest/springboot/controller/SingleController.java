@@ -14,7 +14,7 @@ import java.util.List;
 
 /**
  * @eo.api-type http
- * @eo.group-name 默认分组
+ * @eo.group-name single
  * @eo.path /single4
  */
 
@@ -29,6 +29,7 @@ public class SingleController {
      * @eo.request-type json
      * @param supermanDto
      * @return Carda
+     * @eo.group-name single1
      */
     @PostMapping("/carda")
     public Carda getCarda(@RequestBody List<SupermanDto> supermanDto) {
@@ -43,6 +44,7 @@ public class SingleController {
      * @eo.request-type formdata
      * @param name
      * @return ResponseParams
+     * @eo.group-name single2
      */
     @GetMapping("/hello")
     public ResponseParams<Integer> helloWorld(String name){
@@ -57,6 +59,7 @@ public class SingleController {
      * @param userId
      * @param request
      * @return PlainResult
+     * @eo.group-name single3
      */
     @DeleteMapping("/delete")
     public PlainResult<Long> deleteUser(Integer userId, HttpServletRequest request){
@@ -72,6 +75,7 @@ public class SingleController {
      * @param name
      * @param userDto
      * @return PlainResult
+     * @eo.group-name single4
      */
     @GetMapping("/normal")
     public PlainResult<NormalVO> helloWorld(ResponseParams result, String name, UserDto userDto){
