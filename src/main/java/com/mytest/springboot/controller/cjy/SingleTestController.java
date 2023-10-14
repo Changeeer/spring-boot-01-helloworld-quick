@@ -105,26 +105,26 @@ public class SingleTestController extends BaseController<List<UserDto>, NormalVO
 //	}
 
 
-	/**
-	 * @eo.name 分页获取用户信息
-	 * @eo.url /user/page
-	 * @eo.method get
-	 * @eo.request-type formdata
-	 * @return Result
-	 * @param pageSize 页大
-	 * @param normalVO {@eo.hidden}
-	 * @param page 页数
-	 */
-	@ApiOperation(value = "分页获取用户信息", notes = "nottttttt")
-	@GetMapping("/user/page")
-	public Result<Page<UserDto>> getUserPage(NormalVO normalVO,Integer page, Integer pageSize) {
-//		Result result = new Result();
-//		boolean a = true;
-//		if (a) {
-//			result.setData(new UserDto());
-//		} else {
-//			result.setData(null);
-//		}
-		return new Result<>();
-	}
+//	/**
+//	 * @eo.name 分页获取用户信息
+//	 * @eo.url /user/page
+//	 * @eo.method get
+//	 * @eo.request-type formdata
+//	 * @return Result
+//	 * @param pageSize 页大
+//	 * @param normalVO {@eo.hidden}
+//	 * @param page 页数
+//	 */
+//	@ApiOperation(value = "分页获取用户信息", notes = "nottttttt")
+//	@GetMapping("/user/page")
+//	public Result<Page<UserDto>> getUserPage(NormalVO normalVO,Integer page, Integer pageSize) {
+////		Result result = new Result();
+////		boolean a = true;
+////		if (a) {
+////			result.setData(new UserDto());
+////		} else {
+////			result.setData(null);
+////		}
+//		return new Result<>();
+//	}
 }
