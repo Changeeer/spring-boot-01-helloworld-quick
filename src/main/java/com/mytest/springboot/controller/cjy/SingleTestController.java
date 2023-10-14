@@ -26,8 +26,8 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = "/cjy")
-//public class SingleTestController extends BaseController<List<UserDto>, NormalVO> {
-public class SingleTestController {
+public class SingleTestController extends BaseController<List<UserDto>, NormalVO> {
+//public class SingleTestController {
 //
 //	/**
 //	 */
