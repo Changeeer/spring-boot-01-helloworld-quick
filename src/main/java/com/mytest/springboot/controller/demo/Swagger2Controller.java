@@ -34,11 +34,12 @@ public class Swagger2Controller {
     // 暂无请求方法分析
     // 暂无url分析
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "user", value = "用户", required = true)
+            @ApiImplicitParam(name = "user", value = "用户", required = true),
+            @ApiImplicitParam(name = "num", value = "數量", required = true),
     })
     // @ApiIgnore
     @RequestMapping("/saveUser")
-    public ResponseParams<String> saveUser(Swagger2User user) {
+    public ResponseParams<String> saveUser(Swagger2User user, String num) {
         return null;
     }
 }

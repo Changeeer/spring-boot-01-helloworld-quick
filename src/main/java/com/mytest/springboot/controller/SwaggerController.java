@@ -20,12 +20,14 @@ import javax.ws.rs.core.Response;
 public class SwaggerController {
 
 
-    /** 555
-     * @url /user
+    /**
+     * 555
+     *
      * @param user 1
      * @param name 2
      * @param code 3
      * @return 4
+     * @url /user
      */
     @POST
     @Path("/user")
@@ -65,7 +67,7 @@ public class SwaggerController {
     public Response methodWithRequestBodyWithoutAnnotationAndTwoConsumes(
             User user) {
         int a = 0;
-        a = a >0?1:-1;
+        a = a > 0 ? 1 : -1;
         return Response.ok().entity("").build();
     }
 
@@ -77,12 +79,12 @@ public class SwaggerController {
     @Parameters(
             {
                     @Parameter(name = "pet", description = "宠物", in = ParameterIn.QUERY),
-                    @Parameter(name = "user", description = "宠物主人",  in = ParameterIn.QUERY)
+                    @Parameter(name = "user", description = "宠物主人", in = ParameterIn.QUERY)
             }
     )
 
     public Response methodWithTwoRequestBodyWithoutAnnotationAndTwoConsumes(
-             Pet pet,User user) {
+            Pet pet, User user) {
         return Response.ok().entity("").build();
     }
 
@@ -91,7 +93,7 @@ public class SwaggerController {
     @Operation(summary = "Delete pet",
             description = "Deleting pet.")
     @Parameters({
-            @Parameter(name = "id", description = "用户id" , in = ParameterIn.QUERY)
+            @Parameter(name = "id", description = "用户id", in = ParameterIn.QUERY)
     })
     @Consumes({"application/json", "application/xml"})
     public Response methodWithOneSimpleRequestBody(int id) {
