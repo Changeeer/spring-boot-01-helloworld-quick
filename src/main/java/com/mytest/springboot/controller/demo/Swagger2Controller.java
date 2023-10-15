@@ -21,14 +21,15 @@ import springfox.documentation.annotations.ApiIgnore;
 @RequestMapping("/swagger2")
 public class Swagger2Controller {
 
-    @ApiOperation("保存用户")
     // 暂无请求方法分析
     // 暂无url分析
+    // @ApiIgnore
+
+    @ApiOperation("保存用户")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "user", value = "用户", required = true),
             @ApiImplicitParam(name = "num", value = "數量", required = true),
     })
-    // @ApiIgnore
     @RequestMapping("/saveUser")
     public ResponseParams<String> saveUser(Swagger2User user, String num) {
         return null;
