@@ -19,7 +19,7 @@ public class AController {
      * hello for test
      * @url /hello
      * @eo.method post
-     * @param name 名字 {@required}
+     * @param name 名字 {@eo.required}
      * @return 招呼语
      * @eo.name hello for test
      * @eo.url /hello
