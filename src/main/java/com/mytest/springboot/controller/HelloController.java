@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 /**
  * @eo.group-name 1-10-test
- * @eo.path /{"test"}
  */
 @RestController
 @RequestMapping(value = {"test"}, headers = {"p_header=p"})
@@ -56,7 +55,7 @@ public class HelloController {
 
 	@GetMapping({"default/getUser/{id}"})
 	public ResponseParams<UserDto> testPath(@PathVariable("id") Integer id, String name) {
-		return new ResponseParams<>(null);
+		return new ResponseParams<>();
 	}
 
 	@GetMapping({"default/get/{id}"})
