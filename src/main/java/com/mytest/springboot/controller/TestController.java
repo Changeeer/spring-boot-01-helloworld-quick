@@ -25,6 +25,14 @@ import java.util.Map;
 @RequestMapping(value = "/eolink")
 public class TestController {
 
+	@RequestMapping(value = {"post/addUser", "abc"},headers= {"test_header=abc"})
+	public PlainResult<String> testData(@RequestBody RequestParams<UserDto> params) {
+//		UserDto userDto = params.getData();
+//		return userDto.getAges();
+		System.out.println(JSON.toJSONString(params));
+		return null;
+	}
+
 	/**
 	 * 测试方法名称
 	 * 再换行试试会怎样
