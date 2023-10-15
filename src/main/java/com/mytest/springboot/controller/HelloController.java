@@ -38,10 +38,10 @@ public class HelloController {
 
 	@RequestMapping({"json/addUser"})
 	public ResponseParams testJsonUserDto(@RequestBody UserDto userDto) {
-		return new ResponseParams(userDto);
+		return null;
 	}
 
-	@RequestMapping(value = {"post/addUser"},headers= {"test_header=abc"})
+	@RequestMapping(value = {"post/addUser", "abc"},headers= {"test_header=abc"})
 	public PlainResult<String> testData(@RequestBody RequestParams<UserDto> params) {
 //		UserDto userDto = params.getData();
 //		return userDto.getAges();
