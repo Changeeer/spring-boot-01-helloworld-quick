@@ -21,15 +21,6 @@ import springfox.documentation.annotations.ApiIgnore;
 @RequestMapping("/swagger2")
 public class Swagger2Controller {
 
-
-    /**
-     * @eo.name 保存用户
-     * @eo.url /saveUser
-     * @eo.method get
-     * @eo.request-type formdata
-     * @param user
-     * @return ResponseParams
-     */
     @ApiOperation("保存用户")
     // 暂无请求方法分析
     // 暂无url分析
