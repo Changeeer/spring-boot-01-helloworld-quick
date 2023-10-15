@@ -56,7 +56,6 @@ public class Swagger3Controller {
      * @param password
      * @return String
      */
-    @Hidden
     @POST
     @Path("/other")
     @Operation(summary = "其他用例")
