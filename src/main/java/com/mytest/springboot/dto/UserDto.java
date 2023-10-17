@@ -15,15 +15,15 @@ import java.util.Map;
 @NoArgsConstructor
 public class UserDto {
     /**
-     * 用户名333
+     * 用户名222
      */
     @NotNull(message = "name can not be null")
-    private String userName333;
-    /**
-     * 年龄
-     */
-    @Min(value = 18, message = "must > 18 years old")
-    private Integer ages;
+    private String userName111;
+//    /**
+//     * 年龄
+//     */
+//    @Min(value = 18, message = "must > 18 years old")
+//    private Integer ages;
     /**
      * 朋友
      */
