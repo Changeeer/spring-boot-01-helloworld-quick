@@ -39,10 +39,11 @@ public class Swagger3Controller {
     @Path("/saveUser")
     @Operation(summary = "保存用户22222")
     @Parameters({
-            @Parameter(name = "user", description = "用户", required = true)
+            @Parameter(name = "user", description = "用户", required = true),
+            @Parameter(name = "abc", description = "cba")
     })
     @RequestMapping("/saveUser")
-    public ResponseParams<String> saveUser(Swagger2User user) {
+    public ResponseParams<String> saveUser(Swagger2User user, Integer abc) {
         return null;
     }
 

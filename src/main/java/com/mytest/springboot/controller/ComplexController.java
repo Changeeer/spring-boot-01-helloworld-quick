@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  * @eo.api-type http
- * @eo.groupName 默认分组
+ * @eo.group-name 默认分组222
  * @eo.path /complex
  */
 @RestController

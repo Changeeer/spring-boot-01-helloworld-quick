@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @eo.api-type http
+ * @eo.group-name 默认分组
+ * @eo.path
+ */
+
 public class BaseController<T,PK> {
 
 //    @GetMapping("/void")
@@ -22,13 +28,13 @@ public class BaseController<T,PK> {
 //        return null;
 //    }
 
+
     /**
-     * @eo.name 基础接口
-     * @url /base
+     * @eo.name base
+     * @eo.url /base
      * @eo.method get
      * @eo.request-type formdata
      * @return SpecialResult
-     * @eo.group-name base.web
      */
     @GetMapping("/base")
     protected SpecialResult<T, PK> base() {
