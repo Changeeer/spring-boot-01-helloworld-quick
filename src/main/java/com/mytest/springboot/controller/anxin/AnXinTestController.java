@@ -15,7 +15,11 @@ import java.util.List;
 @RequestMapping("/anxin-test")
 public class AnXinTestController {
 
-    // carda方法
+    /**
+     * carda方法
+     * @param
+     * @return
+     */
     @PostMapping("/carda")
     public Carda getCarda(@RequestBody List<SupermanDto> supermanDto) {
         return null;
