@@ -16,7 +16,7 @@ import java.util.List;
 public class AnXinCharsetTestController {
 
     /**
-     * card??-ISO-8859-1
+     * card·½·¨-GBK
      * @param
      * @return
      */
