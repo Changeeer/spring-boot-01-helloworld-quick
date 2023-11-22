@@ -16,7 +16,7 @@ import java.util.List;
 public class AnXinCharsetTestController {
 
     /**
-     * 杀毒符合覅把社会上
+     * card??-ISO-8859-1
      * @param
      * @return
      */
