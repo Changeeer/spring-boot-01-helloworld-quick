@@ -16,7 +16,7 @@ import java.util.List;
 public class AnXinCharsetTestController {
 
     /**
-     * 瀹夊眳瀹㈠垹鎺変簡鎴戝洖澶嶅ぇ鍙ｅ緞鐨勬牳姝f鍜孶I
+     * 杀毒符合覅把社会上
      * @param
      * @return
      */
@@ -25,19 +25,19 @@ public class AnXinCharsetTestController {
         return null;
     }
 
-    // hello鏂规硶
+    // hello方法
     @GetMapping("/hello")
     public ResponseParams<Integer> helloWorld(String name){
         return null;
     }
 
-    // cdelete鏂规硶
+    // cdelete方法
     @DeleteMapping("/delete")
     public PlainResult<Long> deleteUser(Integer userId, HttpServletRequest request){
         return null;
     }
 
-    // normal鏂规硶
+    // normal方法
     @GetMapping("/normal")
     public PlainResult<NormalVO> helloWorld(ResponseParams result, String name, UserDto userDto){
         return null;
