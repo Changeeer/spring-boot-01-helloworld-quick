@@ -16,7 +16,7 @@ import java.util.List;
 public class AnXinCharsetTestController {
 
     /**
-     * card方法-GBK
+     * card方法
      * @param
      * @return
      */
