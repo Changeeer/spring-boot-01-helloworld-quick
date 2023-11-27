@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/anxin-test")
-public class AnXinCharsetTestController {
+public class AnXinCharsetGBKTestController {
 
     /**
      * card·½·¨
