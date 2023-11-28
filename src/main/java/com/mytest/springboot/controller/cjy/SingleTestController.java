@@ -2,8 +2,8 @@ package com.mytest.springboot.controller.cjy;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.eolinker.platform.api.response.BaseResult;
-import com.eolinker.platform.api.response.PlainResult;
+import com.baomidou.mybatisplus.extension.plugins.pagination.PageDTO;
+import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.controller.BaseController;
 import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.SupermanDto;
@@ -26,7 +26,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = "/cjy")
-public class SingleTestController extends BaseController<List<UserDto>, NormalVO> {
+public class SingleTestController{
 //public class SingleTestController {
 //
 //	/**
@@ -42,11 +42,17 @@ public class SingleTestController extends BaseController<List<UserDto>, NormalVO
 //	 * @eo.method get
 //	 * @eo.request-type formdata
 //	 */
-//	@RequestMapping
-//	public Page<UserDto> init(CostExportRequest request, String a) {
-//		System.out.println("123");
-//		return null;
-//	}
+	@RequestMapping("qweqwe")
+	public PageDTO<Integer> init123(CostExportRequest request, String a) {
+		System.out.println("123");
+		return null;
+	}
+
+	@RequestMapping("qweqwe22")
+	public UserDto init(String a) {
+		System.out.println("123");
+		return null;
+	}
 //
 //	/**
 //	 * @return UserDto
