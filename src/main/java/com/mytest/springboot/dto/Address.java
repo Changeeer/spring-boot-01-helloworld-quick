@@ -9,7 +9,7 @@ public class Address {
 
 
     /**
-     * roomCode
+     * 房门号
      * @required
      * @remark 123123123123
      */
@@ -17,19 +17,19 @@ public class Address {
     private String roomCode;
 
     /**
-     * city
+     * 城市
      * @remark
      */
     private String city;
 
     /**
-     * street
+     * 街道
      * @remark
      */
     private String street;
 
     /**
-     * streetCode
+     * 街道编码
      * @remark
      */
     private Integer streetCode;

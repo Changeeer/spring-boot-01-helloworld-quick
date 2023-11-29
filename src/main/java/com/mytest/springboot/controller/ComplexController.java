@@ -1,8 +1,10 @@
 package com.mytest.springboot.controller;
 
+import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.UserDto;
+import com.mytest.springboot.dto.swagger.User;
 import com.szbank.dto.Carda;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +23,7 @@ import java.util.Map;
 public class ComplexController extends BaseController<String, List<Map<String, UserDto>>>{
 
     @PostMapping("/carda")
-    public Carda testDependent(@RequestBody RequestParams<Carda> data) {
+    public Carda testDependent(@RequestBody RequestParams<UserDto> data, Carda card) {
         data.getData();
         Carda carda = data.getData();
         carda.setName("ch-name");
