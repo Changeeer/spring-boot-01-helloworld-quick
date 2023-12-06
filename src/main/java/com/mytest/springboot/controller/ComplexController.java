@@ -15,53 +15,54 @@ import java.util.Map;
 
 /**
  * @eo.api-type http
- * @eo.group-name 默认分组222
+ * @eo.groupName 默认分组
  * @eo.path /complex
  */
+
 @RestController
 @RequestMapping(value = "/complex")
 public class ComplexController extends BaseController<String, List<Map<String, UserDto>>>{
 
+    /**
+     * 已存在的注释
+     * @param data
+     * @param card
+     * @return
+     * @eo.name 已存在的注释
+     * @eo.url /carda
+     * @eo.method post
+     * @eo.request-type json
+     */
     @PostMapping("/carda")
     public Carda testDependent(@RequestBody RequestParams<UserDto> data, Carda card) {
-        data.getData();
-        Carda carda = data.getData();
-        carda.setName("ch-name");
-        return carda;
+        return null;
     }
+
     /**
+     * @eo.name testMap
+     * @eo.url /map
+     * @eo.method post
+     * @eo.request-type json
      * @param name
      * @param id
      * @param mobile
      * @return ResponseParams
-     * @eo.name testMap
-     * @url /map
-     * @eo.method post
-     * @eo.request-type json
      */
     @RequestMapping(value = "/map", method = {RequestMethod.POST,RequestMethod.GET})
     public ResponseParams<UserDto> testMap(@RequestBody String name, Integer id, String mobile){
-        UserDto addUser = new UserDto();
-//        addUser.setUserName("add-username");
-//        addUser.setAges(20);
-//        addUser.setNickNames(Arrays.asList("jack","bob","lucy"));
         return null;
     }
+
     /**
-     * @param userDtos 用户信息
-     * @return 状态码
      * @eo.name testMapUser
-     * @url /list/user
-     * @eo.method post
+     * @eo.url /list/user
+     * @eo.method get
      * @eo.request-type json
+     * @param userDtos
+     * @return ResponseParams
      */
-    @PostMapping("/list/user")
+    @GetMapping("/list/user")
     public ResponseParams testMapUser(@RequestBody List<UserDto> userDtos){
-        UserDto addUser = new UserDto();
-//        addUser.setUserName("add-username");
-//        addUser.setAges(20);
-//        addUser.setNickNames(Arrays.asList("jack","bob","locy"));
-//        userDtos.add(addUser);
         return null;
     }
 }
