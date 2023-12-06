@@ -6,6 +6,7 @@ import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.SupermanDto;
 import com.mytest.springboot.dto.UserDto;
 import com.szbank.dto.Carda;
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,11 +14,11 @@ import java.util.List;
 
 /**
  * @eo.api-type http
- * @eo.groupName gbk编码分组
  * @eo.path /anxin-test
  */
 @RestController
 @RequestMapping("/anxin-gbk-test")
+@Api(tags = "gbk编码分组")
 public class AnXinCharsetGBKTestController {
 
     /**
