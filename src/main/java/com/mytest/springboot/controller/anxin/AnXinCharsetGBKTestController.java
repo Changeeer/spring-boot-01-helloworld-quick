@@ -11,12 +11,17 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
+/**
+ * @eo.api-type http
+ * @eo.groupName gbkç¼–ç åˆ†ç»„
+ * @eo.path /anxin-test
+ */
 @RestController
-@RequestMapping("/anxin-test")
+@RequestMapping("/anxin-gbk-test")
 public class AnXinCharsetGBKTestController {
 
     /**
-     * card·½·¨
+     * cardï¿½ï¿½ï¿½ï¿½
      * @param
      * @return
      */
@@ -25,19 +30,19 @@ public class AnXinCharsetGBKTestController {
         return null;
     }
 
-    // hello·½·¨
+    // helloï¿½ï¿½ï¿½ï¿½
     @GetMapping("/hello")
     public ResponseParams<Integer> helloWorld(String name){
         return null;
     }
 
-    // cdelete·½·¨
+    // cdeleteï¿½ï¿½ï¿½ï¿½
     @DeleteMapping("/delete")
     public PlainResult<Long> deleteUser(Integer userId, HttpServletRequest request){
         return null;
     }
 
-    // normal·½·¨
+    // normalï¿½ï¿½ï¿½ï¿½
     @GetMapping("/normal")
     public PlainResult<NormalVO> helloWorld(ResponseParams result, String name, UserDto userDto){
         return null;
