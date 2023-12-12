@@ -24,15 +24,6 @@ import javax.ws.rs.Path;
 @RequestMapping("/swagger3")
 public class Swagger3Controller {
 
-
-    /**
-     * @eo.name 保存用户
-     * @url /saveUser
-     * @eo.method get
-     * @eo.request-type formdata
-     * @param user
-     * @return ResponseParams
-     */
     @POST
     @Path("/saveUser")
     @Operation(summary = "保存用户22222")
@@ -46,15 +37,6 @@ public class Swagger3Controller {
     }
 
 
-    /**
-     * @eo.name 其他用例
-     * @url /other
-     * @eo.method get
-     * @eo.request-type formdata
-     * @param username
-     * @param password
-     * @return String
-     */
     @POST
     @Path("/other")
     @Operation(summary = "其他用例")
