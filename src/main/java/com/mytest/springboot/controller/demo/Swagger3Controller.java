@@ -51,7 +51,7 @@ public class Swagger3Controller {
      * @url /other
      * @eo.method get
      * @eo.request-type formdata
-     * @param usereo.name
+     * @param username
      * @param password
      * @return String
      */
@@ -61,6 +61,18 @@ public class Swagger3Controller {
     @RequestMapping("/other")
     public String other(@Schema(name = "帐号", required = true) String username,
                         @Schema(name = "密码", required = true) String password) {
+        return null;
+    }
+
+    @POST
+    @Path("/other-v2")
+    @Operation(summary = "其他用例v2", parameters = {
+            @Parameter(name = "username", description = "用户v2", required = true),
+            @Parameter(name = "password", description = "密码v2"),
+            @Parameter(name = "id", hidden = true)
+    })
+    @RequestMapping("/other-v2")
+    public String saveUserV2(String username, String password, Long id) {
         return null;
     }
 }
