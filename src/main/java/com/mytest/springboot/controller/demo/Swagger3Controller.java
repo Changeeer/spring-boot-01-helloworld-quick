@@ -9,6 +9,7 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.tags.Tags;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,12 +17,11 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 
-/**
- * @eo.group-name Swagger3分组
- */
+
 @Path("/swagger3")
 @RestController
 @RequestMapping("/swagger3")
+@Tag(name = "swagger/v3")
 public class Swagger3Controller {
 
     @POST
@@ -35,7 +35,6 @@ public class Swagger3Controller {
     public ResponseParams<String> saveUser(Swagger2User user, Integer abc) {
         return null;
     }
-
 
     @POST
     @Path("/other")
@@ -52,7 +51,7 @@ public class Swagger3Controller {
             @Parameter(name = "username", description = "用户v2", required = true),
             @Parameter(name = "password", description = "密码v2"),
             @Parameter(name = "id", hidden = true)
-    })
+    }, tags = "swagger/v3/other")
     @RequestMapping("/other-v2")
     public String saveUserV2(String username, String password, Long id) {
         return null;
