@@ -19,7 +19,7 @@ public class ApiDocController {
      * @return
      */
     @PostMapping("/user")
-    public ResponseParams<String> saveUser(UserDto user) {
+    public ResponseParams<Long> saveUser(UserDto user) {
         return null;
     }
 
@@ -29,7 +29,7 @@ public class ApiDocController {
      * @return
      */
     @DeleteMapping("/user")
-    public ResponseParams<String> deleteUser(Long id) {
+    public ResponseParams<Boolean> deleteUser(Long id) {
         return null;
     }
 
@@ -39,7 +39,7 @@ public class ApiDocController {
      * @return
      */
     @GetMapping("/user")
-    public ResponseParams<String> getUser(Long id) {
+    public ResponseParams<UserDto> getUser(Long id) {
         return null;
     }
 
@@ -49,7 +49,7 @@ public class ApiDocController {
      * @return
      */
     @PostMapping("/user")
-    public ResponseParams<String> queryUser(UserDto query) {
+    public ResponseParams<UserDto> queryUser(UserDto query) {
         return null;
     }
 
@@ -59,7 +59,7 @@ public class ApiDocController {
      * @return
      */
     @PutMapping("/user")
-    public ResponseParams<String> updateUser(UserDto user) {
+    public ResponseParams<Boolean> updateUser(UserDto user) {
         return null;
     }
 }
