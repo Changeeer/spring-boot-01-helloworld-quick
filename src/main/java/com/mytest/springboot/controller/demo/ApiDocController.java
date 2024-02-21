@@ -48,7 +48,7 @@ public class ApiDocController {
      * @param query
      * @return
      */
-    @PostMapping("/user")
+    @PostMapping("/user/query")
     public ResponseParams<UserDto> queryUser(UserDto query) {
         return null;
     }
