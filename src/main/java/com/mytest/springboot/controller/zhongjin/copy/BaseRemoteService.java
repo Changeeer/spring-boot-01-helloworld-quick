@@ -17,9 +17,9 @@ import java.util.List;
 public class BaseRemoteService<PKT, DTO, DO, CONV extends IDODTOConverter<DO, DTO>, SRV extends BaseAdapter<PKT, ?, ?, DO, ?, ?, ?, ?>>
         implements IBaseRemoteClient<PKT, DTO> {
 
-    @Autowired
+//    @Autowired
     protected SRV service;
-    @Autowired
+//    @Autowired
     protected CONV converter;
 
     /**
