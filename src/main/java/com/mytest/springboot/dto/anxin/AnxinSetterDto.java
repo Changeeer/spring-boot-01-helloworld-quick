@@ -6,8 +6,7 @@ import lombok.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-@Getter
-@Setter
+@Data
 public class AnxinSetterDto extends AnxinBaseDto {
     @ApiModelProperty(value = "应用id", required = true)
     @NotBlank
