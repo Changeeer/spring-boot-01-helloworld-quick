@@ -16,19 +16,19 @@ import java.util.Set;
 @NoArgsConstructor
 public class ResponseParams<T> implements Serializable {
 
-//    private static final long serialVersionUID=1L;
-//    /**
-//     * 状态码
-//     *
-//     * @required
-//     */
-//    private String code;
-//    /**
-//     * 返回信息
-//     *
-//     * @required
-//     */
-//    private String msg;
+    private static final long serialVersionUID=1L;
+    /**
+     * 状态码
+     *
+     * @required
+     */
+    private String code;
+    /**
+     * 返回信息
+     *
+     * @required
+     */
+    private String msg;
 //
 //    /**
 //     * 属性
