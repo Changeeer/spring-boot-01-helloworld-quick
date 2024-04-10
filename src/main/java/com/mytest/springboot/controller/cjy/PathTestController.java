@@ -38,7 +38,7 @@ public class PathTestController {
     /**
      * @param carda
      * @return String
-     * @eo.name test2
+     * @eo.name test222
      * @url /test2
      * @eo.method get
      * @eo.request-type formdata
