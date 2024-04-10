@@ -1,12 +1,13 @@
 package com.mytest.springboot.dto.anxin;
 
 import io.swagger.annotations.ApiModelProperty;
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
-@Data
+@Setter
+@Getter
 public class AnxinSetterDto extends AnxinBaseDto {
     @ApiModelProperty(value = "应用id", required = true)
     @NotBlank
