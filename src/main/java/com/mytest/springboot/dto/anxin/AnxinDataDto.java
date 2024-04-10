@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AnxinDataDto extends AnxinBaseDto{
+public class AnxinDataDto extends AnxinBaseDto {
     @ApiModelProperty(value = "环境id", required = true)
     @NotNull
     private Integer envId;

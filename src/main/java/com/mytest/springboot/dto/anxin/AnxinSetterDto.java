@@ -8,9 +8,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
-public class AnxinSetterDto
-        extends AnxinBaseDto
-{
+public class AnxinSetterDto extends AnxinBaseDto {
     @ApiModelProperty(value = "应用id", required = true)
     @NotBlank
     private Integer serviceId;
