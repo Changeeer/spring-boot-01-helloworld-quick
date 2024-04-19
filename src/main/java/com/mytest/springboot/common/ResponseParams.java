@@ -29,11 +29,11 @@ public class ResponseParams<T> implements Serializable {
      * @required
      */
     private String msg;
-//
-//    /**
-//     * 属性
-//     */
-//    private List<Property> baseProperties = Collections.emptyList();
+
+    /**
+     * 属性
+     */
+    private List<Property> baseProperties = Collections.emptyList();
     /**
      * 返回对象
      */
