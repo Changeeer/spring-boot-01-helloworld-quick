@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @eo.api-type http
- * @eo.groupName 数据结构测试
+ * @eo.group-name 数据结构测试
  * @eo.path /structure
  */
 
