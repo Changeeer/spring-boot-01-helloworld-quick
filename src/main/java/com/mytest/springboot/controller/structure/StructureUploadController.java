@@ -37,12 +37,13 @@ public class StructureUploadController {
      * @eo.name post请求数据结构
      * @eo.url /post-data
      * @eo.method post
-     * @param req
      * @return ResponseParams
      * @eo.request-type json
      */
     @PostMapping("/post-data")
-    public ResponseParams<NormalVO> getNormalByUser(@RequestBody RequestParams<List<UserDto>> req) {
+    public ResponseParams<NormalVO> getNormalByUser(
+//            @RequestBody RequestParams<List<UserDto>> req
+    ) {
         return null;
     }
 }
