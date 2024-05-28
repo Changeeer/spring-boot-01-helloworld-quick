@@ -1,17 +1,21 @@
 package com.mytest.springboot.controller.structure;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.UserDto;
+import com.mytest.springboot.dto.swagger.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @eo.api-type http
  * @eo.group-name 数据结构测试
  * @eo.path /structure
+ * @eo.groupName 默认分组
  */
 
 @RestController
@@ -39,11 +43,25 @@ public class StructureUploadController {
      * @eo.method post
      * @return ResponseParams
      * @eo.request-type json
+     * @param req
      */
     @PostMapping("/post-data")
     public ResponseParams<NormalVO> getNormalByUser(
-//            @RequestBody RequestParams<List<UserDto>> req
+            @RequestBody RequestParams<List<UserDto>> req
     ) {
+        return null;
+    }
+
+    /**
+     * @eo.name listMapApi
+     * @eo.url /list-map-data
+     * @eo.method get
+     * @eo.request-type formdata
+     * @param req
+     * @return List
+     */
+    @GetMapping("/list-map-data")
+    public List<List<String>> listMapApi(Map<String, NormalVO> req) {
         return null;
     }
 }
