@@ -3,6 +3,7 @@ package com.mytest.springboot.controller.structure;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
+import com.mytest.springboot.controller.BaseController;
 import com.mytest.springboot.dto.Address;
 import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.PageQuery;
@@ -22,7 +23,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/structure")
-public class StructureUploadController {
+public class StructureUploadController extends BaseController<PageQuery, Address> {
 
 //    /**
 //     * @eo.name get请求返回raw
@@ -61,19 +62,19 @@ public class StructureUploadController {
 //        return null;
 //    }
 
-    @PostMapping("/post-data-address")
-    public ResponseParams<Address> getAddress(
-            @RequestBody RequestParams<List<Address>> req
-    ) {
-        return null;
-    }
-
-    @PostMapping("/post-t-t")
-    public ResponseParams<RequestParams<PageQuery>> getTTT(
-            @RequestBody RequestParams<ResponseParams<PageQuery>> req
-    ) {
-        return null;
-    }
+//    @PostMapping("/post-data-address")
+//    public ResponseParams<Address> getAddress(
+//            @RequestBody RequestParams<List<Address>> req
+//    ) {
+//        return null;
+//    }
+//
+//    @PostMapping("/post-t-t")
+//    public ResponseParams<RequestParams<PageQuery>> getTTT(
+//            @RequestBody RequestParams<ResponseParams<PageQuery>> req
+//    ) {
+//        return null;
+//    }
 
 //
 //    /**
