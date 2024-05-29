@@ -30,7 +30,7 @@ public class BaseController<T,PK> {
 
 
     /**
-     * @eo.name base
+     * @eo.name 这是一个基类接口，所有继承这个Controller都有这个接口
      * @eo.url /base
      * @eo.method get
      * @eo.request-type formdata
