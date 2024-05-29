@@ -5,6 +5,7 @@ import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.Address;
 import com.mytest.springboot.dto.NormalVO;
+import com.mytest.springboot.dto.PageQuery;
 import com.mytest.springboot.dto.UserDto;
 import com.mytest.springboot.dto.swagger.User;
 import org.springframework.web.bind.annotation.*;
@@ -68,8 +69,8 @@ public class StructureUploadController {
     }
 
     @PostMapping("/post-t-t")
-    public ResponseParams<ResponseParams<ResponseParams>> getTTT(
-            @RequestBody RequestParams<RequestParams<RequestParams>> req
+    public ResponseParams<RequestParams<PageQuery>> getTTT(
+            @RequestBody RequestParams<ResponseParams<PageQuery>> req
     ) {
         return null;
     }
