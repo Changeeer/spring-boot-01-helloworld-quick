@@ -3,6 +3,7 @@ package com.mytest.springboot.controller.structure;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
+import com.mytest.springboot.dto.Address;
 import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.UserDto;
 import com.mytest.springboot.dto.swagger.User;
@@ -45,12 +46,20 @@ public class StructureUploadController {
      * @eo.request-type json
      * @param req
      */
-    @PostMapping("/post-data")
+    @PostMapping("/post-data-normalvo")
     public ResponseParams<NormalVO> getNormalByUser(
             @RequestBody RequestParams<List<UserDto>> req
     ) {
         return null;
     }
+
+    @PostMapping("/post-data-address")
+    public ResponseParams<Address> getAddress(
+            @RequestBody RequestParams<List<Address>> req
+    ) {
+        return null;
+    }
+
 
     /**
      * @eo.name listMapApi
