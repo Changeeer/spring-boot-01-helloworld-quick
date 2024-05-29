@@ -13,4 +13,6 @@ public class SpecialResult<A,B> {
     private A data;
 
     private List<B> dataList;
+
+    private B data2;
 }
