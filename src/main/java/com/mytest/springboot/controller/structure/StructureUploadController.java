@@ -23,42 +23,42 @@ import java.util.Map;
 @RequestMapping("/structure")
 public class StructureUploadController {
 
-    /**
-     * @eo.name get请求返回raw
-     * @eo.url /get-data
-     * @eo.method get
-     * @eo.request-type formdata
-     * @param id
-     * @param token
-     * @param getAllDetail
-     * @return String
-     */
-    @GetMapping("/get-data")
-    public String rawResp(Long id, String token, boolean getAllDetail) {
-        return null;
-    }
-
-    /**
-     * @eo.name post请求数据结构
-     * @eo.url /post-data
-     * @eo.method post
-     * @return ResponseParams
-     * @eo.request-type json
-     * @param req
-     */
-    @PostMapping("/post-data-normalvo")
-    public ResponseParams<NormalVO> getNormalByUser(
-            @RequestBody RequestParams<List<UserDto>> req
-    ) {
-        return null;
-    }
-
-    @PostMapping("/post-data-list-list")
-    public ResponseParams<List<List<NormalVO>>> getListList(
-            @RequestBody RequestParams<List<List<String>>> req
-    ) {
-        return null;
-    }
+//    /**
+//     * @eo.name get请求返回raw
+//     * @eo.url /get-data
+//     * @eo.method get
+//     * @eo.request-type formdata
+//     * @param id
+//     * @param token
+//     * @param getAllDetail
+//     * @return String
+//     */
+//    @GetMapping("/get-data")
+//    public String rawResp(Long id, String token, boolean getAllDetail) {
+//        return null;
+//    }
+//
+//    /**
+//     * @eo.name post请求数据结构
+//     * @eo.url /post-data
+//     * @eo.method post
+//     * @return ResponseParams
+//     * @eo.request-type json
+//     * @param req
+//     */
+//    @PostMapping("/post-data-normalvo")
+//    public ResponseParams<NormalVO> getNormalByUser(
+//            @RequestBody RequestParams<List<UserDto>> req
+//    ) {
+//        return null;
+//    }
+//
+//    @PostMapping("/post-data-list-list")
+//    public ResponseParams<List<List<NormalVO>>> getListList(
+//            @RequestBody RequestParams<List<List<String>>> req
+//    ) {
+//        return null;
+//    }
 
     @PostMapping("/post-data-address")
     public ResponseParams<Address> getAddress(
@@ -74,17 +74,17 @@ public class StructureUploadController {
         return null;
     }
 
-
-    /**
-     * @eo.name listMapApi
-     * @eo.url /list-map-data
-     * @eo.method get
-     * @eo.request-type formdata
-     * @param req
-     * @return List
-     */
-    @GetMapping("/list-map-data")
-    public List<List<String>> listMapApi(Map<String, NormalVO> req) {
-        return null;
-    }
+//
+//    /**
+//     * @eo.name listMapApi
+//     * @eo.url /list-map-data
+//     * @eo.method get
+//     * @eo.request-type formdata
+//     * @param req
+//     * @return List
+//     */
+//    @GetMapping("/list-map-data")
+//    public List<List<String>> listMapApi(Map<String, NormalVO> req) {
+//        return null;
+//    }
 }
