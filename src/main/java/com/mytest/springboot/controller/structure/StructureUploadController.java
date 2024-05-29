@@ -67,6 +67,13 @@ public class StructureUploadController {
         return null;
     }
 
+    @PostMapping("/post-t-t")
+    public ResponseParams<ResponseParams<ResponseParams>> getTTT(
+            @RequestBody RequestParams<RequestParams<RequestParams>> req
+    ) {
+        return null;
+    }
+
 
     /**
      * @eo.name listMapApi
