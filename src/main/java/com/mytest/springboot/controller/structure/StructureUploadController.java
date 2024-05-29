@@ -69,7 +69,7 @@ public class StructureUploadController
 //            @RequestBody RequestParams<List<Address>> reqList,
 //            String id,
 //            RequestParams<Address> req,
-            RequestParams<List<RequestParams<List<PageQuery>>>> reqListReqList
+            RequestParams<List<ResponseParams<List<PageQuery>>>> reqListReqList
     ) {
         return null;
     }
