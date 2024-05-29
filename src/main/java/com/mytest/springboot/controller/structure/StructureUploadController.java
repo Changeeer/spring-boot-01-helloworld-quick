@@ -66,9 +66,9 @@ public class StructureUploadController
 
     @PostMapping("/post-data-address")
     public ResponseParams<Address> getAddress(
-            @RequestBody RequestParams<List<Address>> reqList,
-            String id,
-            RequestParams<Address> req,
+//            @RequestBody RequestParams<List<Address>> reqList,
+//            String id,
+//            RequestParams<Address> req,
             RequestParams<List<RequestParams<List<PageQuery>>>> reqListReqList
     ) {
         return null;
