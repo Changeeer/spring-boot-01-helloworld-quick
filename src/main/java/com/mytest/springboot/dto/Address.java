@@ -3,6 +3,7 @@ package com.mytest.springboot.dto;
 import lombok.Data;
 
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Data
 public class Address {
@@ -33,4 +34,9 @@ public class Address {
      * @remark
      */
     private Integer streetCode;
+
+    /**
+     * 房号
+     */
+    private List<List<String>> roomNum;
 }
