@@ -53,6 +53,13 @@ public class StructureUploadController {
         return null;
     }
 
+    @PostMapping("/post-data-list-list")
+    public ResponseParams<List<List<NormalVO>>> getListList(
+            @RequestBody RequestParams<List<List<String>>> req
+    ) {
+        return null;
+    }
+
     @PostMapping("/post-data-address")
     public ResponseParams<Address> getAddress(
             @RequestBody RequestParams<List<Address>> req
