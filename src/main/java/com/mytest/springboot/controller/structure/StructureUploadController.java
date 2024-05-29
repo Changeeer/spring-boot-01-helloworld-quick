@@ -23,7 +23,9 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/structure")
-public class StructureUploadController extends BaseController<PageQuery, Address> {
+public class StructureUploadController
+//        extends BaseController<PageQuery, Address>
+{
 
 //    /**
 //     * @eo.name get请求返回raw
@@ -62,12 +64,12 @@ public class StructureUploadController extends BaseController<PageQuery, Address
 //        return null;
 //    }
 
-//    @PostMapping("/post-data-address")
-//    public ResponseParams<Address> getAddress(
-//            @RequestBody RequestParams<List<Address>> req
-//    ) {
-//        return null;
-//    }
+    @PostMapping("/post-data-address")
+    public ResponseParams<Address> getAddress(
+            @RequestBody RequestParams<List<Address>> reqList, String id, RequestParams<Address> req
+    ) {
+        return null;
+    }
 //
 //    @PostMapping("/post-t-t")
 //    public ResponseParams<RequestParams<PageQuery>> getTTT(
