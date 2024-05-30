@@ -29,7 +29,7 @@ public class StructureSpecialTestController {
      * @return PlainResult
      */
     @GetMapping("/normal")
-    public PlainResult<Boolean> helloWorld(ResponseParams result, String name, UserDto userDto){
+    public ResponseParams<Boolean> helloWorld(ResponseParams result, String name, UserDto userDto){
         return null;
     }
 }
