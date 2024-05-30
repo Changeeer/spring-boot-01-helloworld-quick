@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * @eo.api-type http
- * @eo.groupName 数据结构测试.多普通类型统一返回
+ * @eo.group-name 数据结构测试.多普通类型统一返回
  * @eo.path /structure-normal
  */
 
