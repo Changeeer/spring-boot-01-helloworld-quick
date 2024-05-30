@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @eo.api-type http
- * @eo.group-name 据结构测试.特殊测试
+ * @eo.group-name 数据结构测试.特殊测试
  * @eo.path /structure-special-test
  */
 
