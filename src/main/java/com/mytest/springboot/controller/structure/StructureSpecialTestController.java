@@ -43,7 +43,7 @@ public class StructureSpecialTestController {
      * @return PlainResult
      */
     @PostMapping("/test-group")
-    public PlainResult<Long> s2TestGroup(@RequestBody Map<String, UserDto> user) {
+    public PlainResult<Long> s2TestGroup(@RequestBody PlainResult<UserDto> user) {
         return null;
     }
 
