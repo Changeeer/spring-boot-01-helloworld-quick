@@ -4,13 +4,10 @@ import com.alibaba.fastjson.JSON;
 import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
-import com.mytest.springboot.dto.Department;
-import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.UserDto;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 

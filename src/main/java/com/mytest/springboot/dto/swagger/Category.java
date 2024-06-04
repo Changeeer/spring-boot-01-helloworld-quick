@@ -16,9 +16,6 @@
 
 package com.mytest.springboot.dto.swagger;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 public class Category {
     private long id;
     private String name;

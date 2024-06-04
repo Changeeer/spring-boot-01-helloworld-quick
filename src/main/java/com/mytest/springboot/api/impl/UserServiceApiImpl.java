@@ -6,7 +6,6 @@ import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.SupermanDto;
 import com.mytest.springboot.dto.UserDto;
 import com.mytest.springboot.dto.base.SpecialResult;
-import org.apache.dubbo.config.annotation.DubboService;
 
 import java.util.List;
 import java.util.Map;

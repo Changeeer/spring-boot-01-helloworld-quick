@@ -2,9 +2,6 @@ package com.mytest.springboot.dto.swagger;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 public class User {
     private long id;
     @Schema(name = "用户名", required = true)

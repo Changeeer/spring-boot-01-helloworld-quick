@@ -1,13 +1,8 @@
 package com.mytest.springboot.controller.cjy;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.extension.plugins.pagination.PageDTO;
-import com.eolinker.platform.api.response.BaseResult;
-import com.eolinker.platform.api.response.ListResult;
 import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.dto.UserDto;
-import com.szbank.dto.Carda;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

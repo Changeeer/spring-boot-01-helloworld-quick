@@ -2,7 +2,6 @@ package com.mytest.springboot.controller.demo;
 
 import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.common.ResponseParams;
-import com.mytest.springboot.dto.demo.EolinkUser;
 import com.mytest.springboot.dto.demo.Swagger2User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -12,7 +11,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import springfox.documentation.annotations.ApiIgnore;
 
 
 @Api(basePath = "/swagger2", tags = "swagger/v2")

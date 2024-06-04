@@ -2,11 +2,7 @@ package com.mytest.springboot.controller.demo;
 
 import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.UserDto;
-import com.mytest.springboot.dto.demo.EolinkUser;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
-
-import javax.ws.rs.PUT;
 
 
 @RestController

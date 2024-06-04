@@ -1,15 +1,11 @@
 package com.mytest.springboot.common;
 
-import com.mytest.springboot.dto.UserDto;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 @Data
 //@AllArgsConstructor

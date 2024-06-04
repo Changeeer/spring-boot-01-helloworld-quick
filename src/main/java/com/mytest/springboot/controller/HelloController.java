@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 
 /**
  * @eo.group-name 1-10-test

@@ -7,7 +7,12 @@ import com.mytest.springboot.dto.Address;
 import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.PageQuery;
 import com.mytest.springboot.dto.UserDto;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.Map;
@@ -36,7 +41,7 @@ public class StructureUploadController
      * @return String
      */
     @GetMapping("/get-data")
-    public String rawResp(Long id, String token, boolean getAllDetail) {
+    public String rawResp(@RequestParam(name = "uuid") Long id, String token, boolean getAllDetail) {
         return null;
     }
 

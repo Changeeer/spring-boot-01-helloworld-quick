@@ -1,15 +1,6 @@
 package com.mytest.springboot.controller.anxin;
 
-import com.eolinker.platform.api.response.PlainResult;
-import com.mytest.springboot.common.ResponseParams;
-import com.mytest.springboot.dto.NormalVO;
-import com.mytest.springboot.dto.SupermanDto;
-import com.mytest.springboot.dto.UserDto;
-import com.szbank.dto.Carda;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 @RestController
 @RequestMapping("/anxin-test")

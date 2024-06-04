@@ -1,13 +1,8 @@
 package com.mytest.springboot.controller.structure;
 
 import com.eolinker.platform.api.response.PlainResult;
-import com.mytest.springboot.common.ResponseParams;
-import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.UserDto;
-import com.mytest.springboot.dto.demo.Swagger2User;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Map;
 
 /**
  * @eo.api-type http

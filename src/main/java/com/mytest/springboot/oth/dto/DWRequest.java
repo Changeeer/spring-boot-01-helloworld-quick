@@ -1,13 +1,10 @@
 package com.mytest.springboot.oth.dto;
 
-import com.mytest.springboot.dto.NormalVO;
 import com.mytest.springboot.dto.UserDto;
 import com.szbank.dto.Carda;
-import com.szbank.dto.Cardb;
 import lombok.Data;
 
 import java.util.List;
-import java.util.Map;
 
 @Data
 public class DWRequest {

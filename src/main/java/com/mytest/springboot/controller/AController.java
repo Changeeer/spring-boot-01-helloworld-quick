@@ -1,7 +1,6 @@
 package com.mytest.springboot.controller;
 
 import com.mytest.springboot.common.ResponseParams;
-import com.mytest.springboot.dto.UserDto;
 import org.springframework.web.bind.annotation.*;
 
 

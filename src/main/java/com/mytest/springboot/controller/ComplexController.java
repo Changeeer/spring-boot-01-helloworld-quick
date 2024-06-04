@@ -1,15 +1,11 @@
 package com.mytest.springboot.controller;
 
-import com.eolinker.platform.api.response.PlainResult;
 import com.mytest.springboot.common.RequestParams;
 import com.mytest.springboot.common.ResponseParams;
 import com.mytest.springboot.dto.UserDto;
-import com.mytest.springboot.dto.swagger.User;
 import com.szbank.dto.Carda;
-import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 

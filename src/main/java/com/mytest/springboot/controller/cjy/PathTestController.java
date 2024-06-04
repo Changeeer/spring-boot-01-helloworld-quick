@@ -1,14 +1,8 @@
 package com.mytest.springboot.controller.cjy;
 
-import com.eolinker.platform.api.response.PlainResult;
-import com.mytest.springboot.api.UserService;
 import com.mytest.springboot.dto.UserDto;
 import com.szbank.dto.Carda;
-import io.swagger.annotations.ApiOperation;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
 
 
 /**

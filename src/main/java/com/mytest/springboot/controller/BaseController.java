@@ -1,8 +1,6 @@
 package com.mytest.springboot.controller;
 
 
-import com.mytest.springboot.dto.NormalVO;
-import com.mytest.springboot.dto.UserDto;
 import com.mytest.springboot.dto.base.SpecialResult;
 import org.springframework.web.bind.annotation.GetMapping;
 

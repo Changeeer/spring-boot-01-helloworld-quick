@@ -1,6 +1,5 @@
 package com.mytest.springboot.dto;
 
-import javax.validation.constraints.AssertTrue;
 import javax.validation.constraints.NotNull;
 
 public class Department {
