@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/redundancy")
-@Api(tags = "ÈßÓà·Ö×é-150")
+@Api(tags = "å†—ä½™åˆ†ç»„-150")
 public class RedundancyController {
 
     @GetMapping("/r1")

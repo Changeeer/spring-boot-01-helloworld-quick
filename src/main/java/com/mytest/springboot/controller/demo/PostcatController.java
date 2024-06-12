@@ -12,7 +12,7 @@ import javax.ws.rs.PUT;
 /**
  * @eo.group-name 默认分组
  * @eo.api-type http
- * @eo.groupName 默认分组
+ * @eo.group-name 默认分组
  * @eo.path /postcat
  */
 

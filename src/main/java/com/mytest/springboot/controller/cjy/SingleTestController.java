@@ -13,7 +13,7 @@ import java.util.List;
  * @eo.api-type http
  * @eo.group-name postcat
  * @eo.path /cjy
- * @eo.groupName 默认分组
+ * @eo.group-name 默认分组
  */
 @RestController
 @RequestMapping(value = "/cjy")

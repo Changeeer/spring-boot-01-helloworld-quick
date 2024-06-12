@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @eo.api-type http
- * @eo.groupName Ä¬ÈÏ·Ö×é
+ * @eo.group-name Ä¬ï¿½Ï·ï¿½ï¿½ï¿½
  * @eo.path /anxin/swagger2
  */
 
@@ -32,8 +32,8 @@ public class TagGroup1120Controller {
      * @return ResponseParams
      */
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "name", value = "Ãû×Ö"),
-            @ApiImplicitParam(name = "id", value = "Î¨Ò»×Ö¶Î", required = true),
+            @ApiImplicitParam(name = "name", value = "ï¿½ï¿½ï¿½ï¿½"),
+            @ApiImplicitParam(name = "id", value = "Î¨Ò»ï¿½Ö¶ï¿½", required = true),
     })
     @GetMapping("/hello-get-v2")
     @ApiOperation(value = "say hello get", tags = {"test group s2"})
@@ -51,8 +51,8 @@ public class TagGroup1120Controller {
      * @return ResponseParams
      */
     @ApiImplicitParams({
-            @ApiImplicitParam(name = "name", value = "Ãû×Ö"),
-            @ApiImplicitParam(name = "id", value = "Î¨Ò»×Ö¶Î", required = true),
+            @ApiImplicitParam(name = "name", value = "ï¿½ï¿½ï¿½ï¿½"),
+            @ApiImplicitParam(name = "id", value = "Î¨Ò»ï¿½Ö¶ï¿½", required = true),
     })
     @PostMapping("/hello-post-v2")
     @ApiOperation(value = "say hello post")
