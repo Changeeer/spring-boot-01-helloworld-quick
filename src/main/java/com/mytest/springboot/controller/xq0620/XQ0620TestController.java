@@ -17,7 +17,7 @@ import java.util.Map;
  * @eo.path /xq-0620
  * @eo.global-request-header app_id 应用id
  * @eo.global-request-header sign 密钥
- * @eo.global-request-header timestamp 时间戳 {@eo.required = false}
+ * @eo.global-request-header timestamp 时间戳 {@eo.required false}
  * @eo.global-response-header request_id 请求id
  */
 @RestController
