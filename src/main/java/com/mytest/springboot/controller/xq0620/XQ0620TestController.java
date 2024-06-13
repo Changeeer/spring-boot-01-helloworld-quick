@@ -19,7 +19,6 @@ import java.util.Map;
  * @eo.global-request-header sign 密钥
  * @eo.global-request-header timestamp 时间戳 {@eo.required false}
  * @eo.global-response-header request_id 请求id
- * @eo.groupName 默认分组
  */
 @RestController
 @RequestMapping("/xq-0620")
