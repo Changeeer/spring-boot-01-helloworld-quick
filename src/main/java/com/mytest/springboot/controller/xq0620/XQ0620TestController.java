@@ -19,6 +19,7 @@ import java.util.Map;
  * @eo.global-request-header sign 密钥
  * @eo.global-request-header timestamp 时间戳 {@eo.required false}
  * @eo.global-response-header request_id 请求id
+ * @eo.groupName 默认分组
  */
 @RestController
 @RequestMapping("/xq-0620")
@@ -114,8 +115,6 @@ public class XQ0620TestController {
 
 
     /**
-     * @param headerOne
-     * @param headerTwo
      * @return ResponseParams
      * @eo.name swagger示例接口2
      * @eo.url /swagger-req-header-2
@@ -129,7 +128,8 @@ public class XQ0620TestController {
     @ApiOperation(value = "swagger示例接口2")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "Header-One", value = "第一个自定义请求头参数", required = true, dataType = "string", paramType = "header"),
-            @ApiImplicitParam(name = "Header-Two", value = "第二个自定义请求头参数", required = false, dataType = "int", paramType = "header")
+            @ApiImplicitParam(name = "Header-Two", value = "第二个自定义请求头参数", required = false, dataType = "int", paramType = "header"),
+            @ApiImplicitParam(name = "userId", value = "用户id", required = true)
     })
     @ApiResponse(code = 200, message = "成功", responseHeaders = {
             @ResponseHeader(name = "Custom-Response-Header", description = "这是一个自定义的响应头", response = String.class),
@@ -137,7 +137,8 @@ public class XQ0620TestController {
     })
     @GetMapping("/swagger-req-header-2")
     public ResponseParams<Integer> swaggerReqHeader2(@RequestHeader("Header-One") String headerOne,
-                                                     @RequestHeader(value = "Header-Two", required = false) String headerTwo) {
+                                                     @RequestHeader(value = "Header-Two", required = false) String headerTwo,
+                                                     Long userId) {
         return null;
     }
 
@@ -153,6 +154,7 @@ public class XQ0620TestController {
      * @eo.request-type formdata
      * @eo.request-header r-jwt
      * @eo.request-header user_id  {@eo.required false}
+     * @eo.response-header key 返回密钥
      */
     @GetMapping("/eo-header")
     public BaseRequest eoHeader(@RequestHeader(value = "r-jwt") String rjwt,
@@ -161,19 +163,6 @@ public class XQ0620TestController {
         return null;
     }
 
-
-    /**
-     * @eo.name eoHeaderTestCreateDoc
-     * @eo.url /eo-header-tag
-     * @eo.method get
-     * @eo.request-type formdata
-     * @eo.request-header r-jwt
-     * @eo.request-header user-id  {@eo.required false}
-     * @param rjwt
-     * @param userId
-     * @param name
-     * @return BaseRequest
-     */
     @GetMapping("/eo-header-tag")
     public BaseRequest eoHeaderTestCreateDoc(@RequestHeader(value = "r-jwt") String rjwt,
                                 @RequestHeader(value = "user-id", required = false) Long userId,
