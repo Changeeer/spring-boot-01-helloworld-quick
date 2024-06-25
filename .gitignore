@@ -39,7 +39,7 @@
 *.DS_Store
 
 #other
-/target
+*/target/
 /out
 /.project
 *.log*

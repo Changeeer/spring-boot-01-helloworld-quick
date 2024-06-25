@@ -12,6 +12,12 @@ public class SupermanDto extends UserDto{
      */
     private String superSkill;
 
+    /**
+     * 用户名-super
+     * @eo.hidden
+     */
+    private String userName;
+
     public SupermanDto() {
     }
     

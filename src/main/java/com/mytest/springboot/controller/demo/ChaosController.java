@@ -1,6 +1,7 @@
 package com.mytest.springboot.controller.demo;
 
 import com.mytest.springboot.common.ResponseParams;
+import com.mytest.springboot.dto.demo.ChaosUser;
 import com.mytest.springboot.dto.demo.EolinkUser;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,7 +25,7 @@ public class ChaosController {
     @ApiOperation("保存用户2")  // swagger2
     @PUT    // swagger3
     @RequestMapping("/saveUser")
-    public ResponseParams<String> saveUser(EolinkUser user) {
+    public ResponseParams<String> saveUser(ChaosUser user) {
         return null;
     }
 }

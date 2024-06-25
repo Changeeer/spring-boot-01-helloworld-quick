@@ -22,7 +22,7 @@ public class ChaosUser {
     @ApiModelProperty("年龄")
     private Integer age;
 
-    @Schema(name = "性别")
+    @Schema(name = "性别", allowableValues = "0,1")
     private Integer sex;
     /**
      * 朋友

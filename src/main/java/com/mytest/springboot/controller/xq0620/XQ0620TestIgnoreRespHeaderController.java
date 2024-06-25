@@ -1,5 +1,7 @@
 package com.mytest.springboot.controller.xq0620;
 
+import com.mytest.springboot.common.ResponseParams;
+import com.mytest.springboot.dto.SupermanDto;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,7 +27,7 @@ public class XQ0620TestIgnoreRespHeaderController {
      * @eo.request-type formdata
      */
     @PostMapping("/test/class-ignore-resp-header")
-    public Object testIgnoreHeader(String uuid, String userName) {
+    public ResponseParams<SupermanDto> testIgnoreHeader(String uuid, String userName) {
         return null;
     }
 

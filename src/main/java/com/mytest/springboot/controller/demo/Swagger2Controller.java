@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-@Api(basePath = "/swagger2", tags = "swagger/v2")
+@Api(basePath = "/swagger2", tags = "swagger/v2", description = "123123123123123")
 @RestController
 @RequestMapping("/swagger2")
 public class Swagger2Controller {
 
-    @ApiOperation("保存用户")
+    @ApiOperation(value = "保存用户", notes = "保存用户信息asjkdkahdkasjdhiuwqhduihakshdashdukahdshauhuhaushdua")
     @ApiImplicitParams({
             @ApiImplicitParam(name = "user", value = "用户", required = true),
             @ApiImplicitParam(name = "num", value = "數量", required = true),
