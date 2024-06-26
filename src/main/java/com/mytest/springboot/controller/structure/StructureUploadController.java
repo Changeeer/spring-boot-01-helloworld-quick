@@ -21,7 +21,6 @@ import java.util.Map;
  * @eo.api-type http
  * @eo.group-name 数据结构测试
  * @eo.path /structure
- * @eo.group-name 默认分组
  */
 
 @RestController
