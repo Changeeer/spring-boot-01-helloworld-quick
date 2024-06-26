@@ -37,15 +37,15 @@ public class EnumTestController {
         return "当前状态是: " + status;
     }
 
-//    @ApiOperation(value = "测试枚举")
-//    @PostMapping("/enum")
-//    public ResponseParams<String> testEnum(RequestParams<Status> requestParams) {
-//        return null;
-//    }
-//
-//    @ApiOperation(value = "测试枚举2")
-//    @PostMapping("/enum-2")
-//    public ResponseParams<String> testEnum2(PageQuery query) {
-//        return null;
-//    }
+    @ApiOperation(value = "测试枚举")
+    @PostMapping("/enum")
+    public ResponseParams<String> testEnum(RequestParams<Status> requestParams) {
+        return null;
+    }
+
+    @ApiOperation(value = "测试枚举2")
+    @PostMapping("/enum-2")
+    public ResponseParams<String> testEnum2(PageQuery query) {
+        return null;
+    }
 }
