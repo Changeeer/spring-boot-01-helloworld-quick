@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @eo.api-type http
  * @eo.group-name xq-0704
  * @eo.path /xq-0704
- * @eo.tags H, G
+ * @eo.tag H, G
  */
 
 @RestController
@@ -23,7 +23,7 @@ public class XQ0704Controller {
      * @param query
      * @return ResponseParams
      * @eo.name 测试标签
-     * @eo.tags A, B, C, D, E
+     * @eo.tag A, B, C, D, E
      * @eo.url /test-tag
      * @eo.method post
      * @eo.request-type json
