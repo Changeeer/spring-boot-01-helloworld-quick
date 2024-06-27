@@ -49,6 +49,7 @@ public class XQ0704Controller {
 
 
     /**
+     * @eo.tag 测试标签
      * @param query
      * @return
      */
