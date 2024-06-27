@@ -1,11 +1,6 @@
 package com.mytest.springboot.constant;
 
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-
 public enum Status {
-//    ACTIVE,
-//    INACTIVE;
 
     /**
      * 活跃
