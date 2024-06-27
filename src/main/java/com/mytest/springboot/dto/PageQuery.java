@@ -19,4 +19,9 @@ public class PageQuery {
      * 状态
      */
     private Status status;
+
+    /**
+     * 总数
+     */
+    private long total;
 }
