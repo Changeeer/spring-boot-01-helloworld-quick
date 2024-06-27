@@ -49,7 +49,7 @@ public class XQ0704Controller {
 
 
     /**
-     * @eo.tag 支付2
+     * @eo.tag 修改标签
      * @param query
      * @return
      */
