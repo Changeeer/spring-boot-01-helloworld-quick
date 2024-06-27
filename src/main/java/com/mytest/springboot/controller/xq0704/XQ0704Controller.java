@@ -48,6 +48,11 @@ public class XQ0704Controller {
     }
 
 
+    /**
+     * @eo.tag 支付,退款
+     * @param query
+     * @return
+     */
     @ApiOperation(value = "s2详细说明测试", notes = "这是一段又长又臭的详细说明")
     @PostMapping("/test-s2-desc")
     public ResponseParams<String> testS2Desc(@RequestBody PageQuery query) {
