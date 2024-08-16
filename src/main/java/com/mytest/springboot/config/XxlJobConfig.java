@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.validation.constraints.Min;
+
 @Slf4j
 @Configuration
 public class XxlJobConfig {

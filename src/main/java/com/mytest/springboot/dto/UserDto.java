@@ -50,6 +50,22 @@ public class UserDto {
 
     private List<Address> addressList;
 
+    /**
+     * @deprecated
+     */
+    @Deprecated
+    private String error;
+    /**
+     * @deprecated
+     */
+    @Deprecated
+    private String error1;
+    /**
+     * @deprecated
+     */
+    @Deprecated
+    private String error2;
+
 
     public String getUserName() {
         return userName;

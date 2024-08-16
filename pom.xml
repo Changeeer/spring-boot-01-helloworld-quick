@@ -62,7 +62,7 @@
 		<dependency>
 			<groupId>org.example</groupId>
 			<artifactId>szbank-common</artifactId>
-			<version>1.4-SNAPSHOT</version>
+			<version>1.5-SNAPSHOT</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->

@@ -7,22 +7,22 @@ import java.util.List;
 
 @Data
 public class Swagger3User {
-    @Schema(name = "用户id")
+    @Schema(name = "ID", description = "int转long", type = "long")
     private Integer id;
 
-    @Schema(name = "名字", required = true)
+    @Schema(name = "NAME", required = true, description = "名字")
     private String name;
 
-    @Schema(name = "手机", required = true)
+    @Schema(name = "MOBILE", required = true, description = "手机")
     private String mobile;
 
-    @Schema(name = "年龄")
+    @Schema(name = "AGE",description = "年龄", example = "", type = "float")
     private Integer age;
 
-    @Schema(name = "性别")
+    @Schema(name = "SEX", description = "性别", example = "1=男，2=女")
     private Integer sex;
 
-    @Schema(name = "朋友")
+    @Schema(name = "FRIEND")
     private List<Swagger3User> friends;
 
     @Schema(hidden = true)
