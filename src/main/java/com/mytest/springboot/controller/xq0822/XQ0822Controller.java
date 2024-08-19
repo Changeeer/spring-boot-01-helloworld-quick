@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * @eo.api-type http
- * @eo.group-name 默认分组
+ * @eo.group-name xq-0822
  * @eo.path /xq-0822
  */
 @RestController
