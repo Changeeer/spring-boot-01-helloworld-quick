@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * @eo.api-type http
- * @eo.group-name xq-0704
+ * @eo.group-name 默认分组
  * @eo.path /xq-0704
  */
 @RestController
@@ -25,6 +25,10 @@ public class EnumTestController {
      * @param size
      * @param sex {@eo.enums 0=男,1=女}
      * @return
+     * @eo.name 获取状态
+     * @eo.url /status
+     * @eo.method get
+     * @eo.request-type formdata
      */
     @ApiOperation(value = "获取状态")
     @ApiImplicitParams({
@@ -37,12 +41,28 @@ public class EnumTestController {
         return "当前状态是: " + status;
     }
 
+    /**
+     * @eo.name 测试枚举
+     * @eo.url /enum
+     * @eo.method post
+     * @eo.request-type formdata
+     * @param requestParams
+     * @return ResponseParams
+     */
     @ApiOperation(value = "测试枚举")
     @PostMapping("/enum")
     public ResponseParams<String> testEnum(RequestParams<Status> requestParams) {
         return null;
     }
 
+    /**
+     * @eo.name 测试枚举2
+     * @eo.url /enum-2
+     * @eo.method post
+     * @eo.request-type formdata
+     * @param query
+     * @return ResponseParams
+     */
     @ApiOperation(value = "测试枚举2")
     @PostMapping("/enum-2")
     public ResponseParams<String> testEnum2(PageQuery query) {
